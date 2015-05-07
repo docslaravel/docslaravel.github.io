@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Tài liệu Laravel phiên bản 5.0</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="ngnam">
+	<meta name="description" content="Laravel document offline">
+	<meta name="keywords" content="laravel, framework, document, offline, Tiếng việt">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="../assets/css/laravel.css">
+</head>
+<body class="docs language-php scotchified">
+
+<div class="responsive-sidebar-nav" id="responsive-sidebar-nav-1"> 
+	<a href="#" class="toggle-slide menu-link btn">
+		<span class="sr-only">Mọi thứ</span>
+	</a>
+</div>
+
+<div class="scotch-panel-wrapper" id="scotch_panel_wrapper">
+	<div class="scotch-panel-canvas" id="scotch_panel_canvas">
+
+		<span class="overlay"></span>
+
+		<nav class="main">
+			<div class="container">
+				<a href="../vi/" class="brand">
+					<img src="../assets/img/laravel-logo.png" height="30">
+					Tài liệu Laravel 5
+				</a>
+
+				<div class="responsive-sidebar-nav"> 
+					<a href="#" class="toggle-slide menu-link btn">
+						<span class="sr-only">Mọi thứ</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div>
+				
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">VI
+							<span class="caret"></span>							
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+							<li role="presentation">
+								<a href="../" role="menuitem" tabindex="-1" href="">EN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">5.0
+							<span class="caret"></span>							
+						</button>
+						<!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="">Master</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="">5.0</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="">4.2</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="">4.1</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="">4.0</a>
+							</li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<nav id="slide-menu" class="slide-menu scotch-panel-left" role="navigation">
+		
+			<div class="brand">
+				<a href="/">
+					<img src="../assets/img/laravel-logo-white.png" height="50">
+				</a>
+			</div>
+
+			<div class="slide-docs-nav">
+				<h2>Tài liệu</h2>
+				<ul>
+					<li>Cài đặt
+						<ul>
+							<li><a href="installation/">Bắt đầu cài đặt</a></li>
+							<li><a href="configuration/">Cấu hình</a></li>
+							<li><a href="homestead/">Máy chủ Homestead</a></li>
+						</ul>
+					</li>
+					<li>Cơ bản
+						<ul>
+							<li><a href="routing/">Định tuyến</a></li>
+							<li><a href="middleware/">Middleware</a></li>
+							<li><a href="controllers/">Controller</a></li>
+							<li><a href="requests/">Yêu cầu</a></li>
+							<li><a href="responses/">Trả về</a></li>
+							<li><a href="views/">Trình diễn</a></li>
+						</ul>
+					</li>
+					<li>Cấu trúc cơ bản
+						<ul>
+							<li><a href="providers/">Dịch vụ Providers</a></li>
+							<li><a href="container/">Dịch vụ Container</a></li>
+							<li><a href="contracts/">Contracts</a></li>
+							<li><a href="facades/">Facades</a></li>
+							<li><a href="lifecycle/">Request Lifecycle</a></li>
+							<li><a href="structure/">Cấu trúc thư mục</a></li>
+						</ul>
+					</li>
+					<li>Các dịch vụ
+						<ul>
+							<li><a href="authentication/">Chứng thực</a></li>
+							<li><a href="billing/">Casher</a></li>
+							<li><a href="cache/">Cache</a></li>
+							<li><a href="collections/">Collections</a></li>
+							<li><a href="bus/">Command Bus</a></li>
+							<li><a href="extending/">Core Extension</a></li>
+							<li><a href="elixir/">Elixir</a></li>
+							<li><a href="encryption/">Encryption</a></li>
+							<li><a href="envoy/">Envoy</a></li>
+							<li><a href="errors/">Errors &amp; Logging</a></li>
+							<li><a href="events/">Events</a></li>
+							<li><a href="filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="hashing/">Hashing</a></li>
+							<li><a href="helpers/">Helpers</a></li>
+							<li><a href="localization/">Localization</a></li>
+							<li><a href="mail/">Mail</a></li>
+							<li><a href="packages/">Quản lý gói</a></li>
+							<li><a href="pagination/">Phân trang</a></li>
+							<li><a href="queues/">Queues</a></li>
+							<li><a href="session/">Session</a></li>
+							<li><a href="templates/">Templates</a></li>
+							<li><a href="testing/">Unit Testing</a></li>
+							<li><a href="validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Cơ sở dữ liệu
+						<ul>
+							<li><a href="database/">Kiến thức cơ bản</a></li>
+							<li><a href="queries/">xây dựng truy vấn</a></li>
+							<li><a href="eloquent/">Mô hình quan hệ ORM</a></li>
+							<li><a href="schema/">Xây dựng bảng</a></li>
+							<li><a href="migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="artisan/">Overview</a></li>
+							<li><a href="commands/">Phát triển</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="docs-wrapper container">
+
+			<section class="sidebar">
+				<ul>
+
+					<li>Cài đặt
+						<ul>
+							<li><a href="installation/">Bắt đầu cài đặt</a></li>
+							<li><a href="configuration/">Cấu hình</a></li>
+							<li><a href="homestead/">Máy chủ Homestead</a></li>
+						</ul>
+					</li>
+					<li>Cơ bản
+						<ul>
+							<li><a href="routing/">Định tuyến</a></li>
+							<li><a href="middleware/">Middleware</a></li>
+							<li><a href="controllers/">Controller</a></li>
+							<li><a href="requests/">Yêu cầu</a></li>
+							<li><a href="responses/">Trả về</a></li>
+							<li><a href="views/">Trình diễn</a></li>
+						</ul>
+					</li>
+					<li>Cấu trúc cơ bản
+						<ul>
+							<li><a href="providers/">Dịch vụ Providers</a></li>
+							<li><a href="container/">Dịch vụ Container</a></li>
+							<li><a href="contracts/">Contracts</a></li>
+							<li><a href="facades/">Facades</a></li>
+							<li><a href="lifecycle/">Request Lifecycle</a></li>
+							<li><a href="structure/">Cấu trúc thư mục</a></li>
+						</ul>
+					</li>
+					<li>Các dịch vụ
+						<ul>
+							<li><a href="authentication/">Chứng thực</a></li>
+							<li><a href="billing/">Casher</a></li>
+							<li><a href="cache/">Cache</a></li>
+							<li><a href="collections/">Collections</a></li>
+							<li><a href="bus/">Command Bus</a></li>
+							<li><a href="extending/">Core Extension</a></li>
+							<li><a href="elixir/">Elixir</a></li>
+							<li><a href="encryption/">Encryption</a></li>
+							<li><a href="envoy/">Envoy</a></li>
+							<li><a href="errors/">Errors &amp; Logging</a></li>
+							<li><a href="events/">Events</a></li>
+							<li><a href="filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="hashing/">Hashing</a></li>
+							<li><a href="helpers/">Helpers</a></li>
+							<li><a href="localization/">Localization</a></li>
+							<li><a href="mail/">Mail</a></li>
+							<li><a href="packages/">Quản lý gói</a></li>
+							<li><a href="pagination/">Phân trang</a></li>
+							<li><a href="queues/">Queues</a></li>
+							<li><a href="session/">Session</a></li>
+							<li><a href="templates/">Templates</a></li>
+							<li><a href="testing/">Unit Testing</a></li>
+							<li><a href="validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Cơ sở dữ liệu
+						<ul>
+							<li><a href="database/">Kiến thức cơ bản</a></li>
+							<li><a href="queries/">xây dựng truy vấn</a></li>
+							<li><a href="eloquent/">Mô hình quan hệ ORM</a></li>
+							<li><a href="schema/">Xây dựng bảng</a></li>
+							<li><a href="migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="artisan/">Overview</a></li>
+							<li><a href="commands/">Phát triển</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<article>
+				<h1>Tài liệu Laravel 5</h1>
+				<ul>
+					<li>
+						<p>
+							Tài liệu được dịch bởi ngnam 
+						</p>
+						<p>
+							Quay lại phiên bản tiếng anh tại đây:
+							<a href="../">Laravel Tiếng Anh</a>
+						</p>
+
+					</li>
+				</ul>
+			</article>
+		</div>
+
+		<footer class="main">
+			
+			<p>Laravel là một nền tảng php đơn giản, dễ học, và được nhiều lập trình viên lựa chọn. Copyright © Taylor Otwell.</p>
+			<p class="less-significant"><a href="http://jackmcdade.com/">Design by Jack McDade</a></p>
+			<p>Edit by ngnam</p>
+		</footer>
+
+		
+		<script src="../assets/js/laravel.js"></script>
+		<script src="../assets/js/affix.js"></script>
+		<script src="../assets/js/viewport-units-buggyfill.js"></script>
+		<script>window.viewportUnitsBuggyfill.init();</script>
+		<script src="../assets/js/sidebar-scroll.js"></script>
+	   	<p style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); margin: 0px;"></p>
+
+	</div>
+</div>
+
+<div class="scroll_top"></div>
+
+</body></html>

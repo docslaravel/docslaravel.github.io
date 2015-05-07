@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Artisan CLI - Laravel document offline</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Taylor Otwell">
+	<meta name="description" content="Laravel document offline">
+	<meta name="keywords" content="laravel, php, framework, document, offline">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="../assets/css/laravel.css">
+</head>
+<body class="docs language-php scotchified">
+<div class="responsive-sidebar-nav" id="responsive-sidebar-nav-1"> 
+	<a href="#" class="toggle-slide menu-link btn">
+		<span class="sr-only">Menu</span>
+	</a>
+</div>
+<div class="scotch-panel-wrapper" id="scotch_panel_wrapper">
+	<div class="scotch-panel-canvas" id="scotch_panel_canvas">
+
+		<span class="overlay"></span>
+
+		<nav class="main">
+			<div class="container">
+				<a href="/docslaravel" class="brand">
+					<img src="../assets/img/laravel-logo.png" height="30">
+					Laravel docs
+				</a>
+
+				<div class="responsive-sidebar-nav">
+					<a href="#" class="toggle-slide menu-link btn">
+						<span class="sr-only">Open</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">5.0
+							<span class="caret"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<nav id="slide-menu" class="slide-menu scotch-panel-left" role="navigation">
+		
+			<div class="brand">
+				<a href="/">
+					<img src="../assets/img/laravel-logo-white.png" height="50">
+				</a>
+			</div>
+
+			<div class="slide-docs-nav">
+				<h2>Documentation</h2>
+				<ul>
+					<li>Setup
+						<ul>
+							<li><a href="../installation/">Installation</a></li>
+							<li><a href="../configuration/">Configuration</a></li>
+							<li><a href="../homestead/">Homestead</a></li>
+						</ul>
+					</li>
+					<li>The Basics
+						<ul>
+							<li><a href="../routing/">Routing</a></li>
+							<li><a href="../middleware/">Middleware</a></li>
+							<li><a href="../controllers/">Controllers</a></li>
+							<li><a href="../requests/">Requests</a></li>
+							<li><a href="../responses/">Responses</a></li>
+							<li><a href="../views/">Views</a></li>
+						</ul>
+					</li>
+					<li>Architecture Foundations
+						<ul>
+							<li><a href="../providers/">Service Providers</a></li>
+							<li><a href="../container/">Service Container</a></li>
+							<li><a href="../contracts/">Contracts</a></li>
+							<li><a href="../facades/">Facades</a></li>
+							<li><a href="../lifecycle/">Request Lifecycle</a></li>
+							<li><a href="../structure/">Application Structure</a></li>
+						</ul>
+					</li>
+					<li>Services
+						<ul>
+							<li><a href="../authentication/">Authentication</a></li>
+							<li><a href="../billing/">Billing</a></li>
+							<li><a href="../cache/">Cache</a></li>
+							<li><a href="../collections/">Collections</a></li>
+							<li><a href="../bus/">Command Bus</a></li>
+							<li><a href="../extending/">Core Extension</a></li>
+							<li><a href="../elixir/">Elixir</a></li>
+							<li><a href="../encryption/">Encryption</a></li>
+							<li><a href="../envoy/">Envoy</a></li>
+							<li><a href="../errors/">Errors &amp; Logging</a></li>
+							<li><a href="../events/">Events</a></li>
+							<li><a href="../filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="../hashing/">Hashing</a></li>
+							<li><a href="../helpers/">Helpers</a></li>
+							<li><a href="../localization/">Localization</a></li>
+							<li><a href="../mail/">Mail</a></li>
+							<li><a href="../packages/">Package Development</a></li>
+							<li><a href="../pagination/">Pagination</a></li>
+							<li><a href="../queues/">Queues</a></li>
+							<li><a href="../session/">Session</a></li>
+							<li><a href="../templates/">Templates</a></li>
+							<li><a href="../testing/">Unit Testing</a></li>
+							<li><a href="../validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Database
+						<ul>
+							<li><a href="../database/">Basic Usage</a></li>
+							<li><a href="../queries/">Query Builder</a></li>
+							<li><a href="../eloquent/">Eloquent ORM</a></li>
+							<li><a href="../schema/">Schema Builder</a></li>
+							<li><a href="../migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="../redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="../artisan/">Overview</a></li>
+							<li><a href="../commands/">Development</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="docs-wrapper container">
+
+			<section class="sidebar">
+				<ul>
+					<li>Setup
+						<ul>
+							<li><a href="../installation/">Installation</a></li>
+							<li><a href="../configuration/">Configuration</a></li>
+							<li><a href="../homestead/">Homestead</a></li>
+						</ul>
+					</li>
+					<li>The Basics
+						<ul>
+							<li><a href="../routing/">Routing</a></li>
+							<li><a href="../middleware/">Middleware</a></li>
+							<li><a href="../controllers/">Controllers</a></li>
+							<li><a href="../requests/">Requests</a></li>
+							<li><a href="../responses/">Responses</a></li>
+							<li><a href="../views/">Views</a></li>
+						</ul>
+					</li>
+					<li>Architecture Foundations
+						<ul>
+							<li><a href="../providers/">Service Providers</a></li>
+							<li><a href="../container/">Service Container</a></li>
+							<li><a href="../contracts/">Contracts</a></li>
+							<li><a href="../facades/">Facades</a></li>
+							<li><a href="../lifecycle/">Request Lifecycle</a></li>
+							<li><a href="../structure/">Application Structure</a></li>
+						</ul>
+					</li>
+					<li>Services
+						<ul>
+							<li><a href="../authentication/">Authentication</a></li>
+							<li><a href="../billing/">Billing</a></li>
+							<li><a href="../cache/">Cache</a></li>
+							<li><a href="../collections/">Collections</a></li>
+							<li><a href="../bus/">Command Bus</a></li>
+							<li><a href="../extending/">Core Extension</a></li>
+							<li><a href="../elixir/">Elixir</a></li>
+							<li><a href="../encryption/">Encryption</a></li>
+							<li><a href="../envoy/">Envoy</a></li>
+							<li><a href="../errors/">Errors &amp; Logging</a></li>
+							<li><a href="../events/">Events</a></li>
+							<li><a href="../filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="../hashing/">Hashing</a></li>
+							<li><a href="../helpers/">Helpers</a></li>
+							<li><a href="../localization/">Localization</a></li>
+							<li><a href="../mail/">Mail</a></li>
+							<li><a href="../packages/">Package Development</a></li>
+							<li><a href="../pagination/">Pagination</a></li>
+							<li><a href="../queues/">Queues</a></li>
+							<li><a href="../session/">Session</a></li>
+							<li><a href="../templates/">Templates</a></li>
+							<li><a href="../testing/">Unit Testing</a></li>
+							<li><a href="../validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Database
+						<ul>
+							<li><a href="../database/">Basic Usage</a></li>
+							<li><a href="../queries/">Query Builder</a></li>
+							<li><a href="../eloquent/">Eloquent ORM</a></li>
+							<li><a href="../schema/">Schema Builder</a></li>
+							<li><a href="../migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="../redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="../artisan/">Overview</a></li>
+							<li><a href="../commands/">Development</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<article>
+				
+<h1>Artisan CLI</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#calling-commands-outside-of-cli">Calling Commands Outside Of CLI</a></li>
+<li><a href="#scheduling-artisan-commands">Scheduling Artisan Commands</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2><a href="#introduction">Introduction</a></h2>
+<p>Artisan is the name of the command-line interface included with Laravel. It provides a number of helpful commands for your use while developing your application. It is driven by the powerful Symfony Console component.</p>
+<p><a name="usage"></a></p>
+<h2><a href="#usage">Usage</a></h2>
+<h4>Listing All Available Commands</h4>
+<p>To view a list of all available Artisan commands, you may use the <code class=" language-php">list</code> command:</p>
+<pre class=" language-php"><code class=" language-php">php artisan list</code></pre>
+<h4>Viewing The Help Screen For A Command</h4>
+<p>Every command also includes a "help" screen which displays and describes the command's available arguments and options. To view a help screen, simply precede the name of the command with <code class=" language-php">help</code>:</p>
+<pre class=" language-php"><code class=" language-php">php artisan help migrate</code></pre>
+<h4>Specifying The Configuration Environment</h4>
+<p>You may specify the configuration environment that should be used while running a command using the <code class=" language-php"><span class="token operator">--</span>env</code> switch:</p>
+<pre class=" language-php"><code class=" language-php">php artisan migrate <span class="token operator">--</span>env<span class="token operator">=</span>local</code></pre>
+<h4>Displaying Your Current Laravel Version</h4>
+<p>You may also view the current version of your Laravel installation using the <code class=" language-php"><span class="token operator">--</span>version</code> option:</p>
+<pre class=" language-php"><code class=" language-php">php artisan <span class="token operator">--</span>version</code></pre>
+<p><a name="calling-commands-outside-of-cli"></a></p>
+<h2><a href="#calling-commands-outside-of-cli">Calling Commands Outside Of CLI</a></h2>
+<p>Sometimes you may wish to execute an Artisan command outside of the CLI. For example, you may wish to fire an Artisan command from an HTTP route. Just use the <code class=" language-php">Artisan</code> facade:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token scope">Route<span class="token punctuation">::</span></span><span class="token function">get<span class="token punctuation">(</span></span><span class="token string">'/foo'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token variable">$exitCode</span> <span class="token operator">=</span> <span class="token scope">Artisan<span class="token punctuation">::</span></span><span class="token function">call<span class="token punctuation">(</span></span><span class="token string">'command:name'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'--option'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'foo'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   <span class="token comment" spellcheck="true"> //
+</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>You may even queue Artisan commands so they are processed in the background by your <a href="http://laravel.com/docs/5.0/queues">queue workers</a>:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token scope">Route<span class="token punctuation">::</span></span><span class="token function">get<span class="token punctuation">(</span></span><span class="token string">'/foo'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token scope">Artisan<span class="token punctuation">::</span></span><span class="token function">queue<span class="token punctuation">(</span></span><span class="token string">'command:name'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'--option'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'foo'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   <span class="token comment" spellcheck="true"> //
+</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="scheduling-artisan-commands"></a></p>
+<h2><a href="#scheduling-artisan-commands">Scheduling Artisan Commands</a></h2>
+<p>In the past, developers have generated a Cron entry for each console command they wished to schedule. However, this is a headache. Your console schedule is no longer in source control, and you must SSH into your server to add the Cron entries. Let's make our lives easier. The Laravel command scheduler allows you to fluently and expressively define your command schedule within Laravel itself, and only a single Cron entry is needed on your server.</p>
+<p>Your command schedule is stored in the <code class=" language-php">app<span class="token operator">/</span>Console<span class="token operator">/</span>Kernel<span class="token punctuation">.</span>php</code> file. Within this class you will see a <code class=" language-php">schedule</code> method. To help you get started, a simple example is included with the method. You are free to add as many scheduled jobs as you wish to the <code class=" language-php">Schedule</code> object. The only Cron entry you need to add to your server is this:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">*</span> php <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>artisan schedule<span class="token punctuation">:</span>run <span class="token number">1</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token operator">/</span>dev<span class="token operator">/</span><span class="token keyword">null</span> <span class="token number">2</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span><span class="token number">1</span></code></pre>
+<p>This Cron will call the Laravel command scheduler every minute. Then, Laravel evaluates your scheduled jobs and runs the jobs that are due. It couldn't be easier!</p>
+<h3>More Scheduling Examples</h3>
+<p>Let's look at a few more scheduling examples:</p>
+<h4>Scheduling Closures</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">call<span class="token punctuation">(</span></span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true"> // Do some task...
+</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">hourly<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Scheduling Terminal Commands</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">exec<span class="token punctuation">(</span></span><span class="token string">'composer self-update'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">daily<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Manual Cron Expression</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">cron<span class="token punctuation">(</span></span><span class="token string">'* * * * *'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Frequent Jobs</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">everyFiveMinutes<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">everyTenMinutes<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">everyThirtyMinutes<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Daily Jobs</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">daily<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Daily Jobs At A Specific Time (24 Hour Time)</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">dailyAt<span class="token punctuation">(</span></span><span class="token string">'15:00'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Twice Daily Jobs</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">twiceDaily<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Job That Runs Every Weekday</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">weekdays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Weekly Jobs</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">weekly<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">
+// Schedule weekly job for specific day (0-6) and time...
+</span><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">weeklyOn<span class="token punctuation">(</span></span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'8:00'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Monthly Jobs</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">monthly<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Job That Runs On Specific Days</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">mondays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">tuesdays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">wednesdays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">thursdays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">fridays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">saturdays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">sundays<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Prevent Jobs From Overlapping</h4>
+<p>By default, scheduled jobs will be run even if the previous instance of the job is still running. To prevent this, you may use the <code class=" language-php">withoutOverlapping</code> method:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">withoutOverlapping<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>In this example, the <code class=" language-php">foo</code> command will be run every minute if it is not already running.</p>
+<h4>Limit The Environment The Jobs Should Run In</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">monthly<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">environments<span class="token punctuation">(</span></span><span class="token string">'production'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Indicate The Job Should Run Even When Application Is In Maintenance Mode</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">monthly<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">evenInMaintenanceMode<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Only Allow Job To Run When Callback Is True</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">monthly<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">when<span class="token punctuation">(</span></span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>E-mail The Output Of A Scheduled Job</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">sendOutputTo<span class="token punctuation">(</span></span><span class="token variable">$filePath</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">emailOutputTo<span class="token punctuation">(</span></span><span class="token string">'foo@example.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<blockquote>
+<p><strong>Note:</strong> You must send the output to a file before it can be mailed.</p>
+</blockquote>
+<h4>Send The Output Of The Scheduled Job To A Given Location</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">sendOutputTo<span class="token punctuation">(</span></span><span class="token variable">$filePath</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Ping A Given URL After The Job Runs</h4>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$schedule</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">command<span class="token punctuation">(</span></span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">thenPing<span class="token punctuation">(</span></span><span class="token variable">$url</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Using the <code class=" language-php"><span class="token function">thenPing<span class="token punctuation">(</span></span><span class="token variable">$url</span><span class="token punctuation">)</span></code> feature requires the Guzzle HTTP library. You can add Guzzle 5 to your project by adding the following line to your <code class=" language-php">composer<span class="token punctuation">.</span>json</code> file:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token string">"guzzlehttp/guzzle"</span><span class="token punctuation">:</span> <span class="token string">"~5.0"</span></code></pre>
+
+			</article>
+		</div>
+
+		<footer class="main">
+			
+			<p>Laravel is a trademark of Taylor Otwell. Copyright © Taylor Otwell.</p>
+			<p class="less-significant"><a href="http://jackmcdade.com/">Design by Jack McDade</a></p>
+			<p>Edit by ngnam</p>
+		</footer>
+
+		<script src="../assets/js/laravel.js"></script>
+		<script src="../assets/js/viewport-units-buggyfill.js"></script>
+		<script src="../assets/js/affix.js"></script>
+		<script>window.viewportUnitsBuggyfill.init();</script>
+		<script src="../assets/js/sidebar-scroll.js"></script>
+	   	<p style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); margin: 0px;"></p>
+
+	</div>
+</div>
+<div class="scroll_top"></div>
+</body></html>
