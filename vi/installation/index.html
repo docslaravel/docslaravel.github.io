@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Bắt đầu cài đặt - Tài liệu Laravel cơ bản </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Taylor Otwell">
+	<meta name="description" content="Laravel document offline">
+	<meta name="keywords" content="laravel, php, framework, document, offline">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+	<link rel="stylesheet" href="../assets/laravel_vi.css">
+</head>
+<body class="docs language-php scotchified">
+
+<div class="responsive-sidebar-nav" id="responsive-sidebar-nav-1"> 
+	<a href="#" class="toggle-slide menu-link btn">
+		<span class="sr-only">Danh mục</span>
+	</a>
+</div>
+<div class="scotch-panel-wrapper" id="scotch_panel_wrapper">
+	<div class="scotch-panel-canvas" id="scotch_panel_canvas">
+
+		<span class="overlay"></span>
+
+		<nav class="main">
+			<div class="container">
+				<a href="/vi" class="brand">
+					<img src="../../assets/img/laravel-logo.png" height="30">
+					Tài liệu Laravel 5
+				</a>
+
+				<div class="responsive-sidebar-nav">
+					<a href="#" class="toggle-slide menu-link btn">
+						<span class="sr-only">Danh mục</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">VI
+							<span class="caret"></span>							
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+							<li role="presentation">
+								<a href="../../" role="menuitem" tabindex="-1" href="">EN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">5.0
+							<span class="caret"></span>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</nav>
+
+		<nav id="slide-menu" class="slide-menu scotch-panel-left" role="navigation">
+		
+			<div class="brand">
+				<a href="/vi">
+					<img src="../../assets/img/laravel-logo-white.png" height="50">
+				</a>
+			</div>
+
+			<div class="slide-docs-nav">
+				<h2>Tài liệu</h2>
+				<ul>
+					<li>Cài đặt
+						<ul>
+							<li><a href="../installation/">Bắt đầu cài đặt</a></li>
+							<li><a href="../configuration/">Cấu hình</a></li>
+							<li><a href="../homestead/">Máy chủ Homestead</a></li>
+						</ul>
+					</li>
+					<li>Cơ bản
+						<ul>
+							<li><a href="../routing/">Định tuyến</a></li>
+							<li><a href="../middleware/">Middleware</a></li>
+							<li><a href="../controllers/">Controller</a></li>
+							<li><a href="../requests/">Yêu cầu</a></li>
+							<li><a href="../responses/">Trả về</a></li>
+							<li><a href="../views/">Trình diễn</a></li>
+						</ul>
+					</li>
+					<li>Cấu trúc cơ bản
+						<ul>
+							<li><a href="../providers/">Dịch vụ Providers</a></li>
+							<li><a href="../container/">Dịch vụ Container</a></li>
+							<li><a href="../contracts/">Contracts</a></li>
+							<li><a href="../facades/">Facades</a></li>
+							<li><a href="../lifecycle/">Request Lifecycle</a></li>
+							<li><a href="../structure/">Cấu trúc thư mục</a></li>
+						</ul>
+					</li>
+					<li>Các dịch vụ
+						<ul>
+							<li><a href="../authentication/">Chứng thực</a></li>
+							<li><a href="../billing/">Casher</a></li>
+							<li><a href="../cache/">Cache</a></li>
+							<li><a href="../collections/">Collections</a></li>
+							<li><a href="../bus/">Command Bus</a></li>
+							<li><a href="../extending/">Core Extension</a></li>
+							<li><a href="../elixir/">Elixir</a></li>
+							<li><a href="../encryption/">Encryption</a></li>
+							<li><a href="../envoy/">Envoy</a></li>
+							<li><a href="../errors/">Errors &amp; Logging</a></li>
+							<li><a href="../events/">Events</a></li>
+							<li><a href="../filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="../hashing/">Hashing</a></li>
+							<li><a href="../helpers/">Helpers</a></li>
+							<li><a href="../localization/">Localization</a></li>
+							<li><a href="../mail/">Mail</a></li>
+							<li><a href="../packages/">Quản lý gói</a></li>
+							<li><a href="../pagination/">Phân trang</a></li>
+							<li><a href="../queues/">Queues</a></li>
+							<li><a href="../session/">Session</a></li>
+							<li><a href="../templates/">Templates</a></li>
+							<li><a href="../testing/">Unit Testing</a></li>
+							<li><a href="../validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Cơ sở dữ liệu
+						<ul>
+							<li><a href="../database/">Kiến thức cơ bản</a></li>
+							<li><a href="../queries/">xây dựng truy vấn</a></li>
+							<li><a href="../eloquent/">Mô hình quan hệ ORM</a></li>
+							<li><a href="../schema/">Xây dựng bảng</a></li>
+							<li><a href="../migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="../redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="../artisan/">Overview</a></li>
+							<li><a href="../commands/">Phát triển</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="docs-wrapper container">
+
+			<section class="sidebar">
+				<ul>
+					<li>Cài đặt
+						<ul>
+							<li><a href="../installation/">Bắt đầu cài đặt</a></li>
+							<li><a href="../configuration/">Cấu hình</a></li>
+							<li><a href="../homestead/">Máy chủ Homestead</a></li>
+						</ul>
+					</li>
+					<li>Cơ bản
+						<ul>
+							<li><a href="../routing/">Định tuyến</a></li>
+							<li><a href="../middleware/">Middleware</a></li>
+							<li><a href="../controllers/">Controller</a></li>
+							<li><a href="../requests/">Yêu cầu</a></li>
+							<li><a href="../responses/">Trả về</a></li>
+							<li><a href="../views/">Trình diễn</a></li>
+						</ul>
+					</li>
+					<li>Cấu trúc cơ bản
+						<ul>
+							<li><a href="../providers/">Dịch vụ Providers</a></li>
+							<li><a href="../container/">Dịch vụ Container</a></li>
+							<li><a href="../contracts/">Contracts</a></li>
+							<li><a href="../facades/">Facades</a></li>
+							<li><a href="../lifecycle/">Request Lifecycle</a></li>
+							<li><a href="../structure/">Cấu trúc thư mục</a></li>
+						</ul>
+					</li>
+					<li>Các dịch vụ
+						<ul>
+							<li><a href="../authentication/">Chứng thực</a></li>
+							<li><a href="../billing/">Casher</a></li>
+							<li><a href="../cache/">Cache</a></li>
+							<li><a href="../collections/">Collections</a></li>
+							<li><a href="../bus/">Command Bus</a></li>
+							<li><a href="../extending/">Core Extension</a></li>
+							<li><a href="../elixir/">Elixir</a></li>
+							<li><a href="../encryption/">Encryption</a></li>
+							<li><a href="../envoy/">Envoy</a></li>
+							<li><a href="../errors/">Errors &amp; Logging</a></li>
+							<li><a href="../events/">Events</a></li>
+							<li><a href="../filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="../hashing/">Hashing</a></li>
+							<li><a href="../helpers/">Helpers</a></li>
+							<li><a href="../localization/">Localization</a></li>
+							<li><a href="../mail/">Mail</a></li>
+							<li><a href="../packages/">Quản lý gói</a></li>
+							<li><a href="../pagination/">Phân trang</a></li>
+							<li><a href="../queues/">Queues</a></li>
+							<li><a href="../session/">Session</a></li>
+							<li><a href="../templates/">Templates</a></li>
+							<li><a href="../testing/">Unit Testing</a></li>
+							<li><a href="../validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Cơ sở dữ liệu
+						<ul>
+							<li><a href="../database/">Kiến thức cơ bản</a></li>
+							<li><a href="../queries/">xây dựng truy vấn</a></li>
+							<li><a href="../eloquent/">Mô hình quan hệ ORM</a></li>
+							<li><a href="../schema/">Xây dựng bảng</a></li>
+							<li><a href="../migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="../redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="../artisan/">Overview</a></li>
+							<li><a href="../commands/">Phát triển</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<article>
+				
+<h1>Bắt đầu cài đặt</h1>
+<ul>
+	<li><a href="#install-composer">Cài đặt Composer</a></li>
+	<li><a href="#install-laravel">Cài đặt Laravel</a></li>
+	<li><a href="#server-requirements">Các gói cần phải có</a></li>
+</ul>
+<p><a name="install-composer"></a></p>
+<h2><a href="#install-composer">Cài đặt Composer</a></h2>
+<p>Laravel sử dụng trình quản lý gói cài đặt có tên là Composer. Vì vậy trước khi sử dụng Composer, Bạn sẽ cần cài đặt trước gói composer từ trang chủ <a href="http://getcomposer.org/">Composer</a>.</p>
+
+<p><a name="install-laravel"></a></p>
+
+<h2><a href="#install-laravel">Cài đặt Laravel</a></h2>
+<h3>Với Gói cài đặt Laravel</h3>
+<p>Đầu tiên, bạn cần tải xuống gói cài đặt cho Laravel bằng composer bằng dòng lệnh sau.</p>
+
+<pre class=" language-php"><code class=" language-php">composer <span class="token keyword">global</span> <span class="token keyword">require</span> <span class="token string">"laravel/installer=~1.1"</span></code></pre>
+
+<p>Laravel sẽ được cài đặt trong thư mục: <code class=" language-php"><span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>composer<span class="token operator">/</span>vendor<span class="token operator">/</span>bin</code> đường dẫn tới thư mục <code class=" language-php">laravel</code>.</p>
+
+<p>Sau khi bạn cài đặt thành công, để đơn giản bạn chỉ cần chạy <code class=" language-php">laravel <span class="token keyword">new</span></code>, laravel sẽ tự động cài đặt trong thư mục chứa Projects của bạn. Chẳng hạn, <code class=" language-php">laravel <span class="token keyword">new</span> <span class="token class-name">blog</span></code> nó sẽ tạo cho bạn một thư mục có tên là blog <code class=" language-php">blog</code> và thư mục đó sẽ chứa toàn bộ các thành phần của một framework Laravel. Cách này thì nhanh hơn cách dùng với composer (nên dùng):</p>
+
+<pre class=" language-php"><code class=" language-php">laravel <span class="token keyword">new</span> <span class="token class-name">blog</span></code></pre>
+
+<h3>Với Composer Create-Project</h3>
+<p>Bạn cài đặt dự án laravel sử dụng composer <code class=" language-php">create<span class="token operator">-</span>project</code> bằng dòng lệnh sau trong terminal của bạn:</p>
+
+<pre class=" language-php"><code class=" language-php">composer create<span class="token operator">-</span>project laravel<span class="token operator">/</span>laravel <span class="token operator">--</span>prefer<span class="token operator">-</span>dist</code></pre>
+
+<h3>Loại bỏ module đã tồn tại.</h3>
+<p>Laravel sẽ bỏ tính nằng đăng ký và chứng thực người dùng. Nếu bạn muốn bỏ chúng, sử dụng <code class=" language-php">fresh</code> Artisan dòng lệnh sau:</p>
+<pre class=" language-php"><code class=" language-php">php artisan fresh</code></pre>
+<p><a name="server-requirements"></a></p>
+<h2><a href="#server-requirements">Các gói cần phải có</a></h2>
+
+<p>Nền tảng Laravel đưọc phát triển trên hệ thống cần các gói cài đặt sau:</p>
+<ul>
+<li>PHP &gt;= 5.4</li>
+<li>Thành phần mở rộng Mcrypt PHP </li>
+<li>Thành phần mở rộn gpenSSL PHP </li>
+<li>Thành phần mở rộng Mbstring PHP </li>
+<li>Thành phần mở rộng Tkenizer PHP </li>
+</ul>
+<p>Với phiên bản PHP 5.5, một vài hệ điều hành cần cài thành phần mở rộng PHP JSON. Với những bạn sử dụng Ubuntu có thể dụng trình cài đặt quen thuộc <code class=" language-php">apt<span class="token operator">-</span>get install php5<span class="token operator">-</span>json</code>.</p>
+
+<p><a name="configuration"></a></p>
+
+<h2><a href="#configuration">Cầu hình</a></h2>
+
+<p>Đầu tiên bạn cần biết, sau khi cài đặt laravel sẽ tự động tạo ra một chuỗi mã ngẫu nhiên cho ứng dụng của bạn. Nếu bạn đã cài đặt Laravel bằng composer bạn cũng có thể tự tạo ra mã đó bằng dòng lệnh <code class=" language-php">key<span class="token punctuation">:</span>generate</code>.</p>
+
+<p>Đặc thù, chuỗi mã đó dài 32 ký tự. Mã đó có thể tạo ra trong file <code class=" language-php"><span class="token punctuation">.</span>env</code>. <strong>Nếu mã ứng dụng của bạn không được tạo, session người dùng và việc mã hóa dữ liệu khác sẽ không còn được bảo mật!</strong></p>
+
+<p>Ngoài ra laravel không cần cấu hình gì khác. Như thế bạn đã có thể bắt đầu làm việc! Tuy nhiên, mã nên xem lại file <code class=" language-php">config<span class="token operator">/</span>app<span class="token punctuation">.</span>php</code>. một số options như <code class=" language-php">timezone</code> và <code class=" language-php">locale</code> có thể giúp thay đổi một vài thư cần thiết cho ứng dụng của bạn.</p>
+
+<p>Một ứng dụng Laravel đã đưọc cài đặt, bạn nên học cách cấu hình <a href="../configuration#environment-configuration">máy chủ ảo</a> tại đây.</p>
+
+<blockquote>
+<p><strong>Chú ý:</strong> Bạn nên có một file <code class=" language-php">app<span class="token punctuation">.</span>debug</code> được thiết lập thuộc tính là <code class=" language-php"><span class="token boolean">true</span></code> for cho mỗi thành phần trong ứng dụng.</p>
+</blockquote>
+
+<p><a name="permissions"></a></p>
+
+<h3>Phân quyền người dung </h3>
+<p>Laravel có thể cần một vài thiết lập phân quyền cho: thư mục <code class=" language-php">storage</code> và <code class=" language-php">vendor</code> cần được writed trong máy chủ.</p>
+
+<p><a name="pretty-urls"></a></p>
+<h2><a href="#pretty-urls">Làm sạch địa chỉ URLs</a></h2>
+
+<h3>Với máy chủ Apache</h3>
+<p>Bằng cách chỉnh sửa trong file <code class=" language-php"><span class="token keyword">public</span><span class="token operator">/</span><span class="token punctuation">.</span>htaccess</code> Nếu bạn muốn trên thanh địa chỉ không xuất hiện <code class=" language-php">index<span class="token punctuation">.</span>php</code>, bạn cần enable the <code class=" language-php">mod_rewrite</code> module trong service apache của bạn.</p>
+
+<p>Nếu như <code class=" language-php"><span class="token punctuation">.</span>file htaccess</code> không làm việc đúng bạn thử với đoạn mã sau:</p>
+<pre class=" language-php"><code class=" language-php">Options <span class="token operator">+</span>FollowSymLinks
+RewriteEngine On
+
+RewriteCond <span class="token operator">%</span><span class="token punctuation">{</span><span class="token constant">REQUEST_FILENAME</span><span class="token punctuation">}</span> <span class="token operator">!</span><span class="token operator">-</span>d
+RewriteCond <span class="token operator">%</span><span class="token punctuation">{</span><span class="token constant">REQUEST_FILENAME</span><span class="token punctuation">}</span> <span class="token operator">!</span><span class="token operator">-</span>f
+RewriteRule <span class="token operator">^</span> index<span class="token punctuation">.</span>php <span class="token punctuation">[</span>L<span class="token punctuation">]</span></code></pre>
+
+<h3>Với máy chủ Ngĩn</h3>
+<p>Với máy chủ nginx thì mọi đưòng dẫn ỦRL sẽ luôn luôn đưọc làm sạch:</p>
+<pre class=" language-php"><code class=" language-php">location <span class="token operator">/</span> <span class="token punctuation">{</span>
+    try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span><span class="token operator">/</span> <span class="token operator">/</span>index<span class="token punctuation">.</span>php<span class="token operator">?</span><span class="token variable">$query_string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Ngoài ra, khi sử dụng <a href="../homestead/">Homestead</a>, Địa chỉ URL của bạn sẽ đưọc tự động nạp.</p>
+
+			</article>
+		</div>
+
+		<footer class="main">
+			
+			<p>Laravel is a trademark of Taylor Otwell. Copyright © Taylor Otwell.</p>
+			<p class="less-significant"><a href="http://jackmcdade.com/">Design by Jack McDade</a></p>
+			<p>Edit by ngnam</p>
+		</footer>
+
+		<script src="../../assets/js/laravel.js"></script>
+		<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+		<script src="../../assets/js/affix.js"></script>
+		<script>window.viewportUnitsBuggyfill.init();</script>
+<script src="../../assets/js/sidebar-scroll.js"></script>
+
+	   	<p style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); margin: 0px;"></p>
+
+	</div>
+</div><div class="scroll_top"></div>
+</body></html>

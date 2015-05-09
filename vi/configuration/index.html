@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Cấu hình Laravel - Tài liệu Laravel cơ bản</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Taylor Otwell">
+	<meta name="description" content="Laravel document offline">
+	<meta name="keywords" content="laravel, php, framework, document, offline">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+	<link rel="stylesheet" href="../assets/laravel_vi.css">
+
+</head>
+<body class="docs language-php scotchified">
+
+<div class="responsive-sidebar-nav" id="responsive-sidebar-nav-1"> 
+	<a href="#" class="toggle-slide menu-link btn">
+		<span class="sr-only">Danh mục</span>
+	</a>
+</div>
+<div class="scotch-panel-wrapper" id="scotch_panel_wrapper">
+	<div class="scotch-panel-canvas" id="scotch_panel_canvas">
+
+		<span class="overlay"></span>
+
+		<nav class="main">
+			<div class="container">
+				<a href="/" class="brand">
+					<img src="../../assets/img/laravel-logo.png" height="30">
+					Tài liệu Laravel
+				</a>
+
+				<div class="responsive-sidebar-nav">
+					<a href="#" class="toggle-slide menu-link btn">
+						<span class="sr-only">Danh mục</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div>
+
+				<!-- <div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">5.0
+							<span class="caret"></span>
+						</button>
+					</div>
+				</div> -->
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">VI
+							<span class="caret"></span>							
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+							<li role="presentation">
+								<a href="../../" role="menuitem" tabindex="-1" href="">EN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+		<nav id="slide-menu" class="slide-menu scotch-panel-left" role="navigation">
+		
+			<div class="brand">
+				<a href="/">
+					<img src="../assets/img/laravel-logo-white.png" height="50">
+				</a>
+			</div>
+
+			<div class="slide-docs-nav">
+				<h2>Tài liệu</h2>
+				<ul>
+					<li>Cài đặt
+						<ul>
+							<li><a href="../installation/">Bắt đầu cài đặt</a></li>
+							<li><a href="../configuration/">Cấu hình</a></li>
+							<li><a href="../homestead/">Máy chủ Homestead</a></li>
+						</ul>
+					</li>
+					<li>Cơ bản
+						<ul>
+							<li><a href="../routing/">Định tuyến</a></li>
+							<li><a href="../middleware/">Middleware</a></li>
+							<li><a href="../controllers/">Controller</a></li>
+							<li><a href="../requests/">Yêu cầu</a></li>
+							<li><a href="../responses/">Trả về</a></li>
+							<li><a href="../views/">Trình diễn</a></li>
+						</ul>
+					</li>
+					<li>Cấu trúc cơ bản
+						<ul>
+							<li><a href="../providers/">Dịch vụ Providers</a></li>
+							<li><a href="../container/">Dịch vụ Container</a></li>
+							<li><a href="../contracts/">Contracts</a></li>
+							<li><a href="../facades/">Facades</a></li>
+							<li><a href="../lifecycle/">Request Lifecycle</a></li>
+							<li><a href="../structure/">Cấu trúc thư mục</a></li>
+						</ul>
+					</li>
+					<li>Các dịch vụ
+						<ul>
+							<li><a href="../authentication/">Chứng thực</a></li>
+							<li><a href="../billing/">Casher</a></li>
+							<li><a href="../cache/">Cache</a></li>
+							<li><a href="../collections/">Collections</a></li>
+							<li><a href="../bus/">Command Bus</a></li>
+							<li><a href="../extending/">Core Extension</a></li>
+							<li><a href="../elixir/">Elixir</a></li>
+							<li><a href="../encryption/">Encryption</a></li>
+							<li><a href="../envoy/">Envoy</a></li>
+							<li><a href="../errors/">Errors &amp; Logging</a></li>
+							<li><a href="../events/">Events</a></li>
+							<li><a href="../filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="../hashing/">Hashing</a></li>
+							<li><a href="../helpers/">Helpers</a></li>
+							<li><a href="../localization/">Localization</a></li>
+							<li><a href="../mail/">Mail</a></li>
+							<li><a href="../packages/">Quản lý gói</a></li>
+							<li><a href="../pagination/">Phân trang</a></li>
+							<li><a href="../queues/">Queues</a></li>
+							<li><a href="../session/">Session</a></li>
+							<li><a href="../templates/">Templates</a></li>
+							<li><a href="../testing/">Unit Testing</a></li>
+							<li><a href="../validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Cơ sở dữ liệu
+						<ul>
+							<li><a href="../database/">Kiến thức cơ bản</a></li>
+							<li><a href="../queries/">xây dựng truy vấn</a></li>
+							<li><a href="../eloquent/">Mô hình quan hệ ORM</a></li>
+							<li><a href="../schema/">Xây dựng bảng</a></li>
+							<li><a href="../migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="../redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="../artisan/">Overview</a></li>
+							<li><a href="../commands/">Phát triển</a></li>
+						</ul>
+					</li>					
+				</ul>
+			</div>
+		</nav>
+
+		<div class="docs-wrapper container">
+
+			<section class="sidebar">
+				<ul>
+					<li>Cài đặt
+						<ul>
+							<li><a href="../installation/">Bắt đầu cài đặt</a></li>
+							<li><a href="../configuration/">Cấu hình</a></li>
+							<li><a href="../homestead/">Máy chủ Homestead</a></li>
+						</ul>
+					</li>
+					<li>Cơ bản
+						<ul>
+							<li><a href="../routing/">Định tuyến</a></li>
+							<li><a href="../middleware/">Middleware</a></li>
+							<li><a href="../controllers/">Controller</a></li>
+							<li><a href="../requests/">Yêu cầu</a></li>
+							<li><a href="../responses/">Trả về</a></li>
+							<li><a href="../views/">Trình diễn</a></li>
+						</ul>
+					</li>
+					<li>Cấu trúc cơ bản
+						<ul>
+							<li><a href="../providers/">Dịch vụ Providers</a></li>
+							<li><a href="../container/">Dịch vụ Container</a></li>
+							<li><a href="../contracts/">Contracts</a></li>
+							<li><a href="../facades/">Facades</a></li>
+							<li><a href="../lifecycle/">Request Lifecycle</a></li>
+							<li><a href="../structure/">Cấu trúc thư mục</a></li>
+						</ul>
+					</li>
+					<li>Các dịch vụ
+						<ul>
+							<li><a href="../authentication/">Chứng thực</a></li>
+							<li><a href="../billing/">Casher</a></li>
+							<li><a href="../cache/">Cache</a></li>
+							<li><a href="../collections/">Collections</a></li>
+							<li><a href="../bus/">Command Bus</a></li>
+							<li><a href="../extending/">Core Extension</a></li>
+							<li><a href="../elixir/">Elixir</a></li>
+							<li><a href="../encryption/">Encryption</a></li>
+							<li><a href="../envoy/">Envoy</a></li>
+							<li><a href="../errors/">Errors &amp; Logging</a></li>
+							<li><a href="../events/">Events</a></li>
+							<li><a href="../filesystem/">Filesystem / Cloud Storage</a></li>
+							<li><a href="../hashing/">Hashing</a></li>
+							<li><a href="../helpers/">Helpers</a></li>
+							<li><a href="../localization/">Localization</a></li>
+							<li><a href="../mail/">Mail</a></li>
+							<li><a href="../packages/">Quản lý gói</a></li>
+							<li><a href="../pagination/">Phân trang</a></li>
+							<li><a href="../queues/">Queues</a></li>
+							<li><a href="../session/">Session</a></li>
+							<li><a href="../templates/">Templates</a></li>
+							<li><a href="../testing/">Unit Testing</a></li>
+							<li><a href="../validation/">Validation</a></li>
+						</ul>
+					</li>
+					<li>Cơ sở dữ liệu
+						<ul>
+							<li><a href="../database/">Kiến thức cơ bản</a></li>
+							<li><a href="../queries/">xây dựng truy vấn</a></li>
+							<li><a href="../eloquent/">Mô hình quan hệ ORM</a></li>
+							<li><a href="../schema/">Xây dựng bảng</a></li>
+							<li><a href="../migrations/">Migrations &amp; Seeding</a></li>
+							<li><a href="../redis/">Redis</a></li>
+						</ul>
+					</li>
+					<li>Artisan CLI
+						<ul>
+							<li><a href="../artisan/">Overview</a></li>
+							<li><a href="../commands/">Phát triển</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<article>
+				
+<h1>Cấu hình</h1>
+<ul>
+<li><a href="#introduction">Nó là gì vậy?</a></li>
+<li><a href="#after-installation">Sau khi cài đặt</a></li>
+<li><a href="#accessing-configuration-values">Cấu hình timezone</a></li>
+<li><a href="#environment-configuration">Cấu hình máy chủ</a></li>
+<li><a href="#configuration-caching">Cấu hình Caching</a></li>
+<li><a href="#maintenance-mode">Maintenance Mode</a></li>
+<li><a href="#pretty-urls">Làm sạch URLs</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2><a href="#introduction">Nó là gì?</a></h2>
+<p>Tất cả cấu hình của nền tảng laravel được thiết lập trong thư mục<code class=" language-php">config</code>. Bạn có thể dẽ dàng thay đổi các options, Bạn sẽ cảm thấy quen thuộc khi làm việc với nó.</p>
+
+<p><a name="after-installation"></a></p>
+<h2><a href="#after-installation">Sau khi cài dặt</a></h2>
+<h3>Thiết lập tên riêng cho ứng dụng bạn sẽ làm: </h3>
+<p>Sau khi cài đặt ứng dụng Laravel, bạn sẽ thiết lập tên "name" cho ứng dụng của bạn. Mặc định, thư mục <code class=" language-php">app</code> là namespaced giống với tên ứng dụng là <code class=" language-php">App</code>, và tự động sinh code theo chuẩn <a href="http://www.php-fig.org/psr/psr-4/">PSR-4 autoloading</a>. Tuy nhiên, bạn có thể dễ dàng thay đổi namespace hay tên ứng dụng của bạn, bạn có thể làm điều đó bằng dòng lệnh sau php artisan <code class=" language-php">app<span class="token punctuation">:</span>name</code>.</p>
+
+<p>Chẳng hạn, nếu ứng dụng của bạn có tên là "ungdungdautien", bạn sẽ chạy dòng lệnh sau với quyền root:</p>
+<pre class=" language-php"><code class=" language-php">php artisan app<span class="token punctuation">:</span>name ungdungdautien</code></pre>
+
+<p>Thay đổi tên ứng dụng thì rất dễ dàng phải không, và bạn cũng có thể tạo ra nhiều tên <code class=" language-php">App</code> namespace khác nếu bạn muốn.</p>
+
+<h3>Cấu hình khác: </h3>
+<p>Ngoài ra laravel không cần cấu hình gì khác. Như thế bạn đã có thể bắt đầu làm việc! Tuy nhiên, mã nên xem lại file <code class=" language-php">config<span class="token operator">/</span>app<span class="token punctuation">.</span>php</code>. một số options như <code class=" language-php">timezone</code> và <code class=" language-php">locale</code> có thể giúp thay đổi một vài thư cần thiết cho ứng dụng của bạn.</p>
+
+<p>Một ứng dụng Laravel đã đưọc cài đặt, bạn nên học cách cấu hình <a href="../configuration#environment-configuration">máy chủ ảo</a> tại đây.</p>
+
+<blockquote>
+<p><strong>Chú ý:</strong> Bạn nên có một file <code class=" language-php">app<span class="token punctuation">.</span>debug</code> được thiết lập thuộc tính là <code class=" language-php"><span class="token boolean">true</span></code> for cho mỗi thành phần trong ứng dụng.</p>
+</blockquote>
+
+<p><a name="permissions"></a></p>
+<h3>Phân quyền người dung </h3>
+<p>Laravel có thể cần một vài thiết lập phân quyền cho: thư mục <code class=" language-php">storage</code> và <code class=" language-php">vendor</code> cần được writed trong máy chủ.</p>
+
+<p><a name="accessing-configuration-values"></a></p>
+<h2><a href="#accessing-configuration-values">Cấu hình timezone </a></h2>
+<p>You may easily access your configuration values using the <code class=" language-php">Config</code> facade:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$value</span> <span class="token operator">=</span> <span class="token scope">Config<span class="token punctuation">::</span></span><span class="token function">get<span class="token punctuation">(</span></span><span class="token string">'app.timezone'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token scope">Config<span class="token punctuation">::</span></span><span class="token function">set<span class="token punctuation">(</span></span><span class="token string">'app.timezone'</span><span class="token punctuation">,</span> <span class="token string">'America/Chicago'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>You may also use the <code class=" language-php">config</code> helper function:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$value</span> <span class="token operator">=</span> <span class="token function">config<span class="token punctuation">(</span></span><span class="token string">'app.timezone'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="environment-configuration"></a></p>
+<h2><a href="#environment-configuration">Environment Configuration</a></h2>
+<p>It is often helpful to have different configuration values based on the environment the application is running in. For example, you may wish to use a different cache driver locally than you do on your production server. It's easy using environment based configuration.</p>
+<p>To make this a cinch, Laravel utilizes the <a href="https://github.com/vlucas/phpdotenv">DotEnv</a> PHP library by Vance Lucas. In a fresh Laravel installation, the root directory of your application will contain a <code class=" language-php"><span class="token punctuation">.</span>env<span class="token punctuation">.</span>example</code> file. If you install Laravel via Composer, this file will automatically be renamed to <code class=" language-php"><span class="token punctuation">.</span>env</code>. Otherwise, you should rename the file manually.</p>
+<p>All of the variables listed in this file will be loaded into the <code class=" language-php"><span class="token global">$_ENV</span></code> PHP super-global when your application receives a request. You may use the <code class=" language-php">env</code> helper to retrieve values from these variables. In fact, if you review the Laravel configuration files, you will notice several of the options already using this helper!</p>
+<p>Feel free to modify your environment variables as needed for your own local server, as well as your production environment. However, your <code class=" language-php"><span class="token punctuation">.</span>env</code> file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration.</p>
+<p>If you are developing with a team, you may wish to continue including a <code class=" language-php"><span class="token punctuation">.</span>env<span class="token punctuation">.</span>example</code> file with your application. By putting place-holder values in the example configuration file, other developers on your team can clearly see which environment variables are needed to run your application.</p>
+<h4>Accessing The Current Application Environment</h4>
+<p>You may access the current application environment via the <code class=" language-php">environment</code> method on the <code class=" language-php">Application</code> instance:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$environment</span> <span class="token operator">=</span> <span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">environment<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>You may also pass arguments to the <code class=" language-php">environment</code> method to check if the environment matches a given value:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">environment<span class="token punctuation">(</span></span><span class="token string">'local'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true"> // The environment is local
+</span><span class="token punctuation">}</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">environment<span class="token punctuation">(</span></span><span class="token string">'local'</span><span class="token punctuation">,</span> <span class="token string">'staging'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true"> // The environment is either local OR staging...
+</span><span class="token punctuation">}</span></code></pre>
+<p>To obtain an instance of the application, resolve the <code class=" language-php">Illuminate\<span class="token package">Contracts<span class="token punctuation">\</span>Foundation<span class="token punctuation">\</span>Application</span></code> contract via the <a href="../container">service container</a>. Of course, if you are within a <a href="../providers">service provider</a>, the application instance is available via the <code class=" language-php"><span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">app</span></code> instance variable.</p>
+<p>An application instance may also be accessed via the <code class=" language-php">app</code> helper or the <code class=" language-php">App</code> facade:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$environment</span> <span class="token operator">=</span> <span class="token function">app<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">environment<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$environment</span> <span class="token operator">=</span> <span class="token scope">App<span class="token punctuation">::</span></span><span class="token function">environment<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="configuration-caching"></a></p>
+<h2><a href="#configuration-caching">Configuration Caching</a></h2>
+<p>To give your application a little speed boost, you may cache all of your configuration files into a single file using the <code class=" language-php">config<span class="token punctuation">:</span>cache</code> Artisan command. This will combine all of the configuration options for your application into a single file which can be loaded quickly by the framework.</p>
+<p>You should typically run the <code class=" language-php">config<span class="token punctuation">:</span>cache</code> command as part of your deployment routine.</p>
+<p><a name="maintenance-mode"></a></p>
+<h2><a href="#maintenance-mode">Maintenance Mode</a></h2>
+<p>When your application is in maintenance mode, a custom view will be displayed for all requests into your application. This makes it easy to "disable" your application while it is updating or when you are performing maintenance. A maintenance mode check is included in the default middleware stack for your application. If the application is in maintenance mode, an <code class=" language-php">HttpException</code> will be thrown with a status code of 503.</p>
+<p>To enable maintenance mode, simply execute the <code class=" language-php">down</code> Artisan command:</p>
+<pre class=" language-php"><code class=" language-php">php artisan down</code></pre>
+<p>To disable maintenance mode, use the <code class=" language-php">up</code> command:</p>
+<pre class=" language-php"><code class=" language-php">php artisan up</code></pre>
+<h3>Maintenance Mode Response Template</h3>
+<p>The default template for maintenance mode responses is located in <code class=" language-php">resources<span class="token operator">/</span>views<span class="token operator">/</span>errors<span class="token operator">/</span><span class="token number">503</span><span class="token punctuation">.</span>blade<span class="token punctuation">.</span>php</code>.</p>
+<h3>Maintenance Mode &amp; Queues</h3>
+<p>While your application is in maintenance mode, no <a href="../queues">queued jobs</a> will be handled. The jobs will continue to be handled as normal once the application is out of maintenance mode.</p>
+<p><a name="pretty-urls"></a></p>
+<h2><a href="#pretty-urls">Pretty URLs</a></h2>
+<h3>Apache</h3>
+<p>The framework ships with a <code class=" language-php"><span class="token keyword">public</span><span class="token operator">/</span><span class="token punctuation">.</span>htaccess</code> file that is used to allow URLs without <code class=" language-php">index<span class="token punctuation">.</span>php</code>. If you use Apache to serve your Laravel application, be sure to enable the <code class=" language-php">mod_rewrite</code> module.</p>
+<p>If the <code class=" language-php"><span class="token punctuation">.</span>htaccess</code> file that ships with Laravel does not work with your Apache installation, try this one:</p>
+<pre class=" language-php"><code class=" language-php">Options <span class="token operator">+</span>FollowSymLinks
+RewriteEngine On
+
+RewriteCond <span class="token operator">%</span><span class="token punctuation">{</span><span class="token constant">REQUEST_FILENAME</span><span class="token punctuation">}</span> <span class="token operator">!</span><span class="token operator">-</span>d
+RewriteCond <span class="token operator">%</span><span class="token punctuation">{</span><span class="token constant">REQUEST_FILENAME</span><span class="token punctuation">}</span> <span class="token operator">!</span><span class="token operator">-</span>f
+RewriteRule <span class="token operator">^</span> index<span class="token punctuation">.</span>php <span class="token punctuation">[</span>L<span class="token punctuation">]</span></code></pre>
+<p>If your web host doesn't allow the <code class=" language-php">FollowSymlinks</code> option, try replacing it with <code class=" language-php">Options <span class="token operator">+</span>SymLinksIfOwnerMatch</code>.</p>
+<h3>Nginx</h3>
+<p>On Nginx, the following directive in your site configuration will allow "pretty" URLs:</p>
+<pre class=" language-php"><code class=" language-php">location <span class="token operator">/</span> <span class="token punctuation">{</span>
+    try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span><span class="token operator">/</span> <span class="token operator">/</span>index<span class="token punctuation">.</span>php<span class="token operator">?</span><span class="token variable">$query_string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Of course, when using <a href="../homestead">Homestead</a>, pretty URLs will be configured automatically.</p>
+
+			</article>
+		</div>
+
+		<footer class="main">
+			
+			<p>Laravel is a trademark of Taylor Otwell. Copyright © Taylor Otwell.</p>
+			<p class="less-significant"><a href="http://jackmcdade.com/">Design by Jack McDade</a></p>
+			<p>Edit by ngnam</p>
+		</footer>
+
+		<script src="../../assets/js/laravel.js"></script>
+		<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+		<script src="../../assets/js/affix.js"></script>
+		<script>window.viewportUnitsBuggyfill.init();</script>
+<script src="../../assets/js/sidebar-scroll.js"></script>
+
+	   	<p style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); margin: 0px;"></p>
+
+	</div>
+</div><div class="scroll_top"></div>
+</body></html>

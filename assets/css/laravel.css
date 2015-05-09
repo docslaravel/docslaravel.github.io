@@ -1546,7 +1546,8 @@ nav.main {
       font-size: 16px; }
 
 .docs-wrapper {
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 @media (max-width: 1080px) {
   .docs article {
@@ -1597,6 +1598,11 @@ body.the-404 .contain {
   overflow: hidden; 
   width: 100%;
 }
+
+article h1 {
+  font-family: sans-serif;
+}
+
 
 #responsive-sidebar-nav-1 {
   display: block;
@@ -1666,3 +1672,4 @@ body.the-404 .contain {
   }
 
 }
+
